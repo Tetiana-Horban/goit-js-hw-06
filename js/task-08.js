@@ -12,7 +12,8 @@ function onFormSubmit(event) {
       alert('Все поля должны быть заполнены!');
     }
     console.log(...formData);
-    formEl.email.value = '';
-    formEl.password.value = '';
+    // formEl.email.value = '';
+    // formEl.password.value = '';
+    formEl.reset();
   });
 }
