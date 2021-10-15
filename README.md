@@ -38,13 +38,10 @@ task-01
 (тега <h2>) и количество элементов в категории (всех вложенных в него <li>). В результате, в консоли
 будут выведены такие сообщения.
 
-Number of categories: 3
+Number of categories: 3 Category: Animals Elements: 4 Category: Products Elements: 3 Category:
+Technologies Elements: 5.
 
-Category: Animals Elements: 4
-
-Category: Products Elements: 3
-
-Category: Technologies Elements: 5 task-02
+task-02
 
 В HTML есть пустой список ul#ingredients.
 
@@ -56,7 +53,9 @@ const ingredients = [ 'Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Co
 
 Создаст отдельный элемент <li>. Обзательно используй метод document.createElement(). Добавит
 название ингредиента как его текстовое содержимое. Добавит элементу класс item. После чего вставит
-все <li> за одну операцию в список ul.ingredients. task-03
+все <li> за одну операцию в список ul.ingredients.
+
+task-03
 
 Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
 
@@ -148,3 +147,16 @@ task-08
 Если в форме есть незаполненные поля, выводи alert с предупреждением о том, что все поля должны быть заполнены.
 Если пользователь заполнил все поля и отправил форму, собери значения полей в обьект, где имя поля будет именем свойства, а значение поля - значением свойства. Для доступа к элементам формы используй свойство elements.
 Выведи обьект с введенными данными в консоль и очисти значения полей формы методом reset.
+
+task-09
+
+Напиши скрипт, который изменяет цвета фона элемента <body> через инлайн стиль при клике на
+button.change-color и выводит значение цвета в span.color.
+
+<div class="widget">
+  <p>Background color: <span class="color">-</span></p>
+  <button type="button" class="change-color">Change color</button>
+</div>
+Для генерации случайного цвета используй функцию getRandomHexColor.
+
+function getRandomHexColor() { return `#${Math.floor(Math.random() * 16777215).toString(16)}`; }
