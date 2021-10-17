@@ -9,10 +9,10 @@ function onFormSubmit(event) {
   const mail = formElements.email.value;
   const password = formElements.password.value;
   const formData = { mail, password };
-  if (mail & (password !== '')) {
-    console.log(formData);
-  } else {
+  if (mail === '' || password === '') {
     return alert('Все поля должны быть заполнены!');
+  } else {
+    console.log(formData);
   }
   formEl.reset();
 }
